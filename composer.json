@@ -1,11 +1,11 @@
 {
-	"name": "jianyan74/yii2-easy-wechat",
-	"description": "WeChat SDK for yii2, 基于 overtrue/easywechat",
-	"keywords": ["yii2", "wechat", "easywechat", "php", "jianyan74"],
+	"name": "hfz/yii2-easy-wechat",
+	"description": "WeChat SDK for yii2, 基于 jianyan74/yii2-easy-wechat",
+	"keywords": ["yii2", "wechat", "easywechat", "php", "hfz"],
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "jianyan74"
+			"name": "ynddddd"
 		}
 	],
 	"type": "yii2-extension",
@@ -16,7 +16,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"jianyan\\easywechat\\": "./src"
+			"hfz\\easywechat\\": "./src"
 		}
 	}
 }

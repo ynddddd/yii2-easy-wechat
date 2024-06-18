@@ -1,6 +1,6 @@
 <?php
 
-namespace jianyan\easywechat;
+namespace hfz\easywechat;
 
 use yii\base\Component;
 

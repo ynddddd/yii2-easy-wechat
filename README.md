@@ -1,24 +1,13 @@
 # yii2-easy-wechat
 
-> 支持 overtrue/wechat 4.x 和 6.x
+> 支持 overtrue/wechat 6.x
 
-由于 [max-wen/yii2-easy-wechat](https://github.com/max-wen/yii2-easy-wechat) 不支持 EasyWechat 4.x 所以建立该项目
-
-WeChat SDK for Yii2 , 基于 [overtrue/wechat](https://github.com/overtrue/wechat).     
-这个扩展可以简单的用yii2的方式去调用EasyWechat:   `Yii::$app->wechat`.   
-
-[![Latest Stable Version](https://poser.pugx.org/jianyan74/yii2-easy-wechat/v/stable)](https://packagist.org/packages/jianyan74/yii2-easy-wechat)
-[![Total Downloads](https://poser.pugx.org/jianyan74/yii2-easy-wechat/downloads)](https://packagist.org/packages/jianyan74/yii2-easy-wechat)
-[![License](https://poser.pugx.org/jianyan74/yii2-easy-wechat/license)](https://packagist.org/packages/jianyan74/yii2-easy-wechat)
-
-## 安装 EasyWechat 4.x
-```
-composer require jianyan74/yii2-easy-wechat:~1.0
-```
+由于 [jianyan74/yii2-easy-wechat](https://github.com/max-wen/yii2-easy-wechat) 不支持 EasyWechat 6.x 所以建立该项目
+ 
 
 ## 安装 EasyWechat 6.x
 ```
-composer require ynddddd/yii2-easy-wechat:~2.0
+composer require hfz/yii2-easy-wechat:dev-master
 ```
 
 ## 配置
@@ -30,7 +19,7 @@ composer require ynddddd/yii2-easy-wechat:~2.0
 'components' => [
 	// ...
 	'wechat' => [
-		'class' => 'ynddddd\easywechat\Wechat',
+		'class' => 'hfz\easywechat\Wechat',
 		'userOptions' => [],  // 用户身份类参数
 		'sessionParam' => 'wechatUser', // 微信用户信息将存储在会话在这个密钥
 		'returnUrlParam' => '_wechatReturnUrl', // returnUrl 存储在会话中
@@ -179,40 +168,6 @@ JSSDK发起支付
 </script>
 ```
 
-### 智能提示
-
-如果你需要编辑器（PhpStorm等）的智能提示来使用`Yii::$app->wechat`，可以在`yii\base\Application`中加入:
-```
-<?php
-
-namespace yii\base;
-
-use Yii;
-
-/**
- *
- * @property \jianyan\easywechat\Wechat $wechat 加入这一行即可实现编辑器智能提示.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
- */
-abstract class Application extends Module
-{
-
-}
-```
-
-### 更多的文档
-
- [EasyWeChat Docs](https://www.easywechat.com/docs/master).
  
- ### 实例
-
- [RageFrame](https://github.com/jianyan74/rageframe2)
-
-### 问题反馈
-
-在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
-
-QQ群：[655084090](https://jq.qq.com/?_wv=1027&k=4BeVA2r)
+ 
 
