@@ -1,6 +1,6 @@
 # yii2-easy-wechat
 
-> 支持 overtrue/wechat 4.x 和 5.x
+> 支持 overtrue/wechat 4.x 和 6.x
 
 由于 [max-wen/yii2-easy-wechat](https://github.com/max-wen/yii2-easy-wechat) 不支持 EasyWechat 4.x 所以建立该项目
 
@@ -16,9 +16,9 @@ WeChat SDK for Yii2 , 基于 [overtrue/wechat](https://github.com/overtrue/wecha
 composer require jianyan74/yii2-easy-wechat:~1.0
 ```
 
-## 安装 EasyWechat 5.x
+## 安装 EasyWechat 6.x
 ```
-composer require jianyan74/yii2-easy-wechat:~2.0
+composer require ynddddd/yii2-easy-wechat:~2.0
 ```
 
 ## 配置
@@ -30,7 +30,7 @@ composer require jianyan74/yii2-easy-wechat:~2.0
 'components' => [
 	// ...
 	'wechat' => [
-		'class' => 'jianyan\easywechat\Wechat',
+		'class' => 'ynddddd\easywechat\Wechat',
 		'userOptions' => [],  // 用户身份类参数
 		'sessionParam' => 'wechatUser', // 微信用户信息将存储在会话在这个密钥
 		'returnUrlParam' => '_wechatReturnUrl', // returnUrl 存储在会话中
